@@ -1,0 +1,1570 @@
+body {
+  background: #000000;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-display: swap;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.icon-bar:after {
+  content: "";
+  border-bottom: 1px solid #ffff;
+  height: 1px;
+  width: 100%;
+  float: left;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+br.line-mobile {
+  display: none;
+}
+
+
+
+@media (max-width: 992px) {
+  h2 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+}
+
+.tns-item {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+}
+
+header .logo {
+  max-width: 10.625rem;
+}
+
+header .menu button,
+.mobile-menu {
+  display: none;
+}
+
+header .menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.31rem;
+}
+
+header .container {
+  justify-content: space-between;
+  min-height: 4.375rem;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  header .menu button {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0.412rem 0.1rem;
+  }
+
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  header .menu ul {
+    display: none;
+    position: absolute;
+  }
+
+  .mobile-menu.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    z-index: 2;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  header .logo {
+    max-width: 135px;
+  }
+
+  header .container {
+    min-height: 60px;
+  }
+
+  .mobile-menu.active {
+    top: 60px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .logo {
+    max-width: 110px;
+  }
+
+  header .container {
+    min-height: 50px;
+  }
+
+  .mobile-menu.active {
+    top: 50px;
+  }
+}
+
+/* Buttons */
+.register-btn,
+.login-btn,
+.hero-img .btn,
+.event-container .event-button,
+.promotion .footer .link {
+  background: #60b802;
+  border: 2px solid #60b802;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  font-weight: 900;
+  position: relative;
+  border-radius: 3px;
+}
+
+.hero-img .btn-div {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: auto;
+}
+
+.has-feed .hero-img .btn-div {
+  bottom: -4%;
+}
+
+.hero-img .btn,
+.event-container .event-button {
+  line-height: 0;
+  font-size: 28.8px;
+  height: 65.28px;
+  padding-right: 95px;
+  padding-left: 76px;
+  white-space: nowrap;
+}
+
+.hero-img .btn,
+.event-container .event-button {
+  justify-content: center;
+}
+
+.login-btn {
+  background: transparent;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+.register-btn:after,
+.login-btn:after,
+.hero-img .btn:after,
+.event-container .event-button:after,
+.promotion .footer .link:after {
+  content: "";
+  background-image: url(https://cdn.bahigolp.com/img/lp-const/img/triangle.png);
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+}
+
+.hero-img .btn:after,
+.event-container .event-button:after {
+  width: 26px;
+  height: 30px;
+}
+
+@media (max-width: 992px) {
+  .has-feed .hero-img .btn-div {
+    bottom: -8%;
+  }
+}
+
+@media (max-width: 750px) {
+  .has-feed .hero-img .btn-div {
+    bottom: -1%;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero-img .btn-div {
+    bottom: 10%;
+  }
+
+  .promo-line-3 .hero-img .btn-div {
+    bottom: 10%;
+  }
+
+  .promo-line-1 .hero-img .btn-div {
+    bottom: 17%;
+  }
+
+  .has-feed .hero-img .btn-div {
+    bottom: -14%;
+  }
+
+  .dzfr .hero-img .btn-div {
+    bottom: 13%;
+  }
+}
+/* Container */
+.container {
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 993px) {
+  .container {
+    width: 962px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Hero Div */
+.hero-img {
+  position: relative;
+}
+
+.hero-img .bg-img {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 790px;
+}
+
+.hero-img .bg-img .black-shadow {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 7px;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9612219887955182) 35%,
+    rgba(0, 0, 0, 0.6502976190476191) 55%,
+    rgba(0, 0, 0, 0.5242471988795518) 65%,
+    rgba(0, 0, 0, 0.34217436974789917) 75%,
+    rgba(0, 0, 0, 0) 90%
+  );
+}
+
+.hero-img .promo-text {
+  position: absolute;
+  bottom: 7%;
+  font-size: 38px;
+  width: 850px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.promo-line-7 .hero-img .promo-text{
+  bottom: 17px;
+}
+
+.promo-line-1 .hero-img .promo-text {
+  bottom: 12%;
+}
+
+.hero-img .promo-text span.color{
+  font-weight: 900;
+  color: #ff5344;
+}
+
+.hero-img .promo-text del span.color{
+  font-weight: 900;
+  color: #fff !important;
+}
+
+.hero-img .promo-text span.tiny {
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.hero-img .loader {
+  position: absolute;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+  top: 40%;
+}
+
+@media (min-width: 1920px) {
+  .hero-img {
+    width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1310px) {
+  .hero-img .bg-img .black-shadow {
+    height: 60%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9612219887955182) 55%,
+      rgba(0, 0, 0, 0.6502976190476191) 75%,
+      rgba(0, 0, 0, 0.5242471988795518) 80%,
+      rgba(0, 0, 0, 0.34217436974789917) 85%,
+      rgba(0, 0, 0, 0) 95%
+    );
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-img .bg-img {
+    height: 580px;
+  }
+
+  .hero-img .bg-img .black-shadow {
+    height: 50%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9612219887955182) 40%,
+      rgba(0, 0, 0, 0.6502976190476191) 60%,
+      rgba(0, 0, 0, 0.5242471988795518) 68%,
+      rgba(0, 0, 0, 0.34217436974789917) 75%,
+      rgba(0, 0, 0, 0) 85%
+    );
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-img .bg-img {
+    height: 580px;
+  }
+
+  .hero-img .bg-img .black-shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 73%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9612219887955182) 40%,
+      rgba(0, 0, 0, 1.650298) 48%,
+      rgba(0, 0, 0, 0.5242471988795518) 60%,
+      rgba(0, 0, 0, 0.34217436974789917) 70%,
+      rgba(0, 0, 0, 0) 80%
+    ) !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero-img .bg-img .black-shadow {
+    bottom: 8%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9612219887955182) 35%,
+      rgba(0, 0, 0, 1.650298) 47%,
+      rgba(0, 0, 0, 0.5242471988795518) 54%,
+      rgba(0, 0, 0, 0.34217436974789917) 61%,
+      rgba(0, 0, 0, 0) 68%
+    ) !important;
+  }
+
+  .not-found-page .bg-img .black-shadow {
+    bottom: 0;
+    height: 90%;
+  }
+}
+
+/** Hero Div For Football Feed */
+.hero-img .feed-div {
+  color: #fff;
+  width: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-img .feed-div .feed-content {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 99;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.hero-img .feed-div .feed-content p {
+  margin: 0;
+  padding: 15px;
+}
+
+.hero-img .feed-div .feed-content p b {
+  font-weight: 900;
+}
+
+.hero-img .feed-div .odds-div {
+  height: auto;
+  border-radius: 1px;
+  z-index: 99;
+  background: #b7b7b7;
+  display: inline-block;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.hero-img .feed-div .odds-div .odds-name {
+  margin-top: 0;
+  padding-bottom: 36px;
+  padding-top: 10px;
+  color: #000;
+  font-weight: 900;
+  display: block;
+  font-size: 26px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hero-img .feed-div .odds-div .odds-rate {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #ff5344;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+  bottom: -27px;
+  padding: 0.3rem 1rem;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.hero-img .feed-btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1310px) {
+  .hero-img .odds-div-area {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-img .feed-div .feed-content {
+    width: 470px;
+  }
+
+  .hero-img .feed-div .odds-div .odds-name {
+    font-size: 24px;
+  }
+
+  .hero-img .feed-div .odds-div .odds-rate {
+    font-size: 32px;
+    bottom: -22px;
+  }
+}
+
+@media (max-width: 993px) {
+  .hero-img .feed-div .feed-content {
+    font-size: 22px;
+    width: 530px;
+  }
+
+  .hero-img .feed-div .odds-div {
+    height: auto;
+  }
+
+  .hero-img .feed-div .odds-div .odds-name {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+
+  .hero-img .feed-div .odds-div .odds-rate {
+    font-size: 24px;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero-img .feed-div .odds-div {
+    height: auto;
+  }
+
+  .hero-img .feed-div .odds-div .odds-bg {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .hero-img .feed-div .feed-content {
+    width: 320px;
+  }
+}
+
+/** Hero Div For Football & Tennis */
+.hero-img .players-and-leagues {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 9rem;
+  min-height: 425px;
+}
+
+.hero-img .players-and-leagues > div {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1700px;
+}
+
+.hero-img .players-and-leagues .home-player,
+.hero-img .players-and-leagues .away-player {
+  width: 460px;
+}
+
+.hero-img .players-and-leagues .home-logo,
+.hero-img .players-and-leagues .away-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 76.8px;
+  width: 96px;
+}
+
+.hero-img .players-and-leagues .home-logo {
+  padding-right: 288px;
+}
+
+.hero-img .players-and-leagues .away-logo {
+  padding-left: 288px;
+}
+
+.hero-img .players-and-leagues .league-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 115.2px;
+  top: -19.2px;
+}
+
+.hero-img .players-and-leagues .event-date {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 124.8px;
+  font-size: 23px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.hero-img .odds-rates {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 28.8px;
+  z-index: 10;
+}
+
+.hero-img .odds-rates .rate {
+  width: 96px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-img .odds-rates .rate p {
+  font-size: 28.8px;
+  border: solid 1px #979797;
+  background-color: #fff;
+  color: #000;
+  font-weight: 900;
+  margin: 0;
+}
+
+.hero-img .odds-rates .rate span {
+  position: absolute;
+  background: #ff5344;
+  border-radius: 50%;
+  font-size: 17.28px;
+  top: -17.28px;
+  width: 26.88px;
+  height: 26.88px;
+  left: -9.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff5344;
+  font-weight: 900;
+  line-height: 0;
+  color: #fff;
+}
+
+.hero-img .logo-hour-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 720px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  justify-content: flex-end;
+}
+
+.hero-img .logo-hour-area:not(.has-feed) {
+  justify-content: flex-start;
+  margin-top: 10rem;
+}
+
+.hero-img .logo-hour-area .logo-hour {
+  height: 200px;
+  margin-top: -1rem;
+  position: relative;
+}
+
+@media (max-width: 1310px) {
+  .hero-img .players-and-leagues {
+    margin-bottom: 16rem;
+  }
+
+  .hero-img .players-and-leagues .home-player,
+  .hero-img .players-and-leagues .away-player {
+    width: 370px;
+  }
+
+  .hero-img .odds-rates .rate span {
+    font-size: 15px;
+    top: -15px;
+    width: 20px;
+    height: 20px;
+    left: -9px;
+  }
+
+  .hero-img .odds-rates .rate {
+    width: 80px;
+  }
+
+  .hero-img .odds-rates .rate p {
+    font-size: 26px;
+  }
+
+  .promo-line-7 .hero-img .promo-text{
+    bottom: 3%;
+  }
+
+  .promo-line-1 .hero-img .promo-text {
+    bottom: 13%;
+  }
+
+  .hero-img .promo-text {
+    bottom: 7%;
+    font-size: 36px;
+    
+  }
+}
+
+@media (max-width: 993px) {
+  .hero-img .logo-hour-area:not(.has-feed) {
+    margin-top: 3rem;
+  }
+
+  .hero-img .logo-hour-area {
+    height: 550px;
+    width: 100%;
+  }
+
+  .hero-img .players-and-leagues {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .hero-img .players-and-leagues .home-player,
+  .hero-img .players-and-leagues .away-player {
+    width: 320px;
+    margin-bottom: 7rem;
+  }
+
+  .hero-img .players-and-leagues .league-logo {
+    width: 100px;
+  }
+
+  .hero-img .players-and-leagues .away-logo {
+    padding-left: 225px;
+  }
+
+  .hero-img .players-and-leagues .home-logo {
+    padding-right: 225px;
+  }
+
+  .hero-img .players-and-leagues .event-date {
+    font-size: 18px;
+  }
+
+  .hero-img .odds-rates .rate {
+    width: 80px;
+  }
+
+  .hero-img .odds-rates .rate span {
+    font-size: 12px;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    left: -7px;
+  }
+
+  
+  .promo-line-7 .hero-img .promo-text {
+    bottom: 16px;
+  }
+
+  .hero-img .promo-text {
+    font-size: 28px;
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-img .btn,
+  .event-container .event-button {
+    font-size: 22px;
+    height: 45px;
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .hero-img .btn:after,
+  .event-container .event-button:after {
+    width: 20px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-img .players-and-leagues {
+    width: 100vw;
+    bottom: 17%;
+  }
+
+  .hero-img .players-and-leagues .away-logo {
+    padding-left: 200px;
+  }
+
+  .hero-img .players-and-leagues .home-logo {
+    padding-right: 200px;
+  }
+
+  .hero-img .players-and-leagues .away-logo,
+  .hero-img .players-and-leagues .home-logo {
+    width: 90px;
+    top: 5rem;
+  }
+
+  .hero-img .players-and-leagues .league-logo {
+    width: 90px;
+    top: 0px;
+  }
+
+  .hero-img .players-and-leagues .home-player,
+  .hero-img .players-and-leagues .away-player {
+    width: 250px;
+    margin-bottom: 7rem;
+  }
+
+  .hero-img .logo-hour-area {
+    height: 500px;
+    margin-top: 4rem;
+  }
+
+  .hero-img .odds-rates .rate p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 630px) {
+  .iptv-de.not-found-page.promo-line-7 .hero-img .promo-text {
+    font-size: 25px;
+    bottom: 2%;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero-img .logo-hour-area .logo-hour {
+    height: 160px;
+  }
+
+  .iptv-de.not-found-page br.line-mobile {
+    display: block;
+  }
+
+  .hero-img .players-and-leagues .home-player,
+  .hero-img .players-and-leagues .away-player {
+    max-width: 160px;
+    width: auto;
+    margin-bottom: 14rem;
+  }
+
+  .hero-img .players-and-leagues .league-logo {
+    width: 80px;
+  }
+
+  .hero-img .players-and-leagues .away-logo,
+  .hero-img .players-and-leagues .home-logo {
+    width: 80px;
+  }
+
+  .hero-img .players-and-leagues .away-logo {
+    padding-left: 214px;
+  }
+
+  .hero-img .players-and-leagues .home-logo {
+    padding-right: 214px;
+  }
+
+  .hero-img .logo-hour-area {
+    height: 580px;
+    margin-top: 1rem;
+    justify-content: center;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.9612219887955182) 40%, rgba(0, 0, 0, 1.650298) 48%, rgba(0, 0, 0, 0.5242471988795518) 60%, rgb(0 0 0 / 0%) 70%, rgb(0 0 0 / 0%) 80%) !important
+  }
+
+  .hero-img .odds-rates {
+    bottom: 46%;
+  }
+
+  .hero-img .promo-text {
+    bottom: 15%;
+    font-size: 22px;
+    width:max-content;
+  }
+
+  html[lang="de-DE"] .not-found-page .hero-img .promo-text {
+    font-size: 25px;
+  }
+
+  .promo-line-3 .hero-img .promo-text {
+    bottom: 18%;
+  }
+
+  .promo-line-1 .hero-img .promo-text {
+    bottom: 23%;
+  }
+
+  .dzfr .hero-img .promo-text {
+    bottom: 18%;
+    font-size: 22px;
+  }
+
+  .iptv-de.not-found-page.promo-line-7 .hero-img .promo-text {
+    font-size: 26px;
+    bottom: -19%;
+  }
+
+  .iptv-de.not-found-page.promo-line-7 .hero-img .btn-div {
+    bottom: -7%;
+  }
+
+  .iptv-de.not-found-page.promo-line-7 .step-list {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .promo-line-3 .hero-img .promo-text,
+  .promo-line-7 .hero-img .promo-text {
+    font-size: 20px;
+    bottom: 15%;
+  }
+
+  .promo-line-3 .hero-img .promo-text{
+    bottom: 18%;
+  }
+
+  .promo-line-1 .hero-img .promo-text {
+    font-size: 17px;
+    bottom: 26%;
+  }
+
+  .fr-v3 .hero-img .promo-text {
+    bottom: 18%;
+    font-size: 22px;
+  }
+
+  .dzfr .hero-img .promo-text {
+    bottom: 20%;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 330px) {
+  .promo-line-3 .hero-img .promo-text,
+  .promo-line-7 .hero-img .promo-text {
+    font-size: 19px;
+    bottom: 15.5%;
+  }
+
+  .promo-line-3 .hero-img .promo-text{
+    bottom: 18%;
+  }
+
+  .iptv-de.not-found-page.promo-line-7 .hero-img .promo-text {
+    font-size: 25px;
+    bottom: -17%;
+  }
+}
+
+/** Steps For Register */
+.step-list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.has-feed .step-list {
+  margin-top: 60px;
+}
+
+.step-list .step a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step-list .step a .number {
+  font-size: 117px;
+  font-weight: 900;
+  color: #3d3f49;
+  line-height: 107px;
+  padding-right: 1rem;
+}
+
+.step-list .step a .text {
+  font-size: 26px;
+}
+
+.step-list .step img {
+  max-width: 55px;
+  align-self: flex-end;
+  padding-bottom: 0.5rem;
+}
+
+.step-list .step a .content {
+  display: none;
+  font-size: 14px;
+}
+
+.step-list .step .text-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.step-list .step .text-content:before {
+  content: "";
+  background-image: url(https://cdn.bahigolp.com/img/lp-const/img/arrow.png);
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  max-width: 177px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+}
+
+.step-list .step:last-child .text-content:before {
+  background-image: url(https://cdn.bahigolp.com/img/lp-const/img/arrow-last.png);
+}
+
+.step-list .step {
+  flex: 0.3;
+}
+
+@media (max-width: 992px) {
+  .step-list {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .step-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .step-list .step .text-content {
+    flex-basis: auto;
+    margin-left: 16px;
+    padding-top: 16px;
+    align-self: flex-start;
+    width: 150px;
+  }
+
+  .step-list .step a .number {
+    font-size: 106px;
+    padding-right: 10px;
+    line-height: 1;
+  }
+
+  .step-list .step a .content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 8px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .step-list .step .text-content:before {
+    top: unset;
+    max-width: 140px;
+    height: 10px;
+    bottom: -18px;
+  }
+
+  .step-list .step img {
+    max-width: 50px;
+    padding-bottom: 8px;
+  }
+
+  .step-list .step a .text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 530px) {
+  .has-feed .step-list {
+    margin-top: 140px;
+  }
+
+  .promo-line-1 .step-list:not(.has-feed) {
+    margin-top: -6rem;
+  }
+
+  .promo-line-3 .step-list:not(.has-feed) {
+    margin-top: -4rem;
+  }
+
+  .promo-line-3.dzfr .step-list {
+    margin-top: -4rem;
+  }
+}
+
+/** Other Matches & Sports List & Cas Games && Promotions **/
+.other-matches,
+.sports-container,
+.cas-games-container,
+.promotions-container {
+  flex-direction: column;
+}
+
+.other-matches.loading,
+.sports-container.loading,
+.cas-games-container.loading,
+.promotions-container.loading {
+  height: 18vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: skeleton-animation 1.5s infinite linear;
+  left: 0;
+  position: absolute;
+  z-index: 100;
+}
+
+@keyframes skeleton-animation {
+  0% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #131316;
+  }
+  75% {
+    background-color: #2e303b;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+
+.sports-container.loading,
+.cas-games-container.loading {
+  height: 11.71vw;
+}
+
+.sports-slider .sport {
+  border-radius: 1px;
+  background-color: #2e303b;
+}
+
+.sports-slider .sport img {
+  max-width: 40px;
+  margin: 0 auto;
+}
+
+.sports-slider .sport span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sports-slider .sport a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.other-matches .other-match {
+  position: relative;
+  margin: 0 auto;
+  background: #2e303b;
+}
+
+.other-matches .logo-area {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.other-matches .logo-area img {
+  width: 70px;
+}
+
+.other-matches .logo-area img.league-logo {
+  width: 60px;
+  margin-top: 1rem;
+}
+
+.other-matches .logo-area img.home-logo,
+.other-matches .logo-area img.away-logo {
+  margin-top: 2rem;
+}
+
+.other-matches .event-date {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  display: block;
+}
+
+.other-matches .odds-rates {
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.other-matches-slider .odds-rates .rate {
+  width: 75px;
+  text-align: center;
+  position: relative;
+}
+
+.other-matches-slider .odds-rates .rate p {
+  font-size: 22px;
+  border: solid 1px #979797;
+  background-color: #fff;
+  color: #000;
+  font-weight: 900;
+  margin: 0;
+}
+
+.other-matches-slider .odds-rates .rate span {
+  position: absolute;
+  background: #ff5344;
+  border-radius: 50%;
+  font-size: 14px;
+  top: -12px;
+  width: 20px;
+  height: 20px;
+  left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff5344;
+  font-weight: 900;
+  line-height: 0;
+  color: #fff;
+}
+
+.games-slider .game .tns-lazy-img:not(.tns-complete) {
+  width: 46%;
+}
+
+.promotions-slider .promotion {
+  background: #2e303b;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  text-align: center;
+  position: relative;
+}
+
+.promotions-slider .promotion .title {
+  display: block;
+  padding-top: 13px;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 10px;
+  min-height: 70px;
+}
+
+.promotions-slider .promotion .content {
+  margin: 0;
+  margin-bottom: 70px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 170px;
+  line-height: 1.3;
+}
+
+.promotions-slider .promotion .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.promotions-slider .promotion .footer .divider {
+  display: block;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.promotions-slider .promotion .tns-lazy-img:not(.tns-complete) {
+  width: 46%;
+}
+
+.promotions-slider .promotion .footer > div {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  .promotions-slider .promotion .content {
+    height: 200px;
+  }
+
+  .other-matches .logo-area img {
+    width: 48px;
+  }
+
+  .other-matches .logo-area img.league-logo {
+    width: 55px;
+  }
+
+  .other-matches-slider .odds-rates .rate p {
+    font-size: 20px;
+  }
+
+  .other-matches-slider .odds-rates .rate span {
+    font-size: 12px;
+    top: -12px;
+    width: 16px;
+    height: 16px;
+    left: -6px;
+  }
+
+  .other-matches-slider .odds-rates .rate {
+    width: 60px;
+  }
+
+  .other-matches .odds-rates {
+    gap: 15px;
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .other-matches .event-date {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+  .promotions-slider .promotion .content {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .promotions-slider .promotion .content {
+    margin-bottom: 5.5rem;
+    height: 240px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .other-matches.loading,
+  .promotions-container.loading {
+    height: 310px;
+  }
+
+  .sports-container.loading,
+  .cas-games-container.loading {
+    height: 225px;
+  }
+}
+
+.event-container {
+  flex-direction: column;
+}
+
+.event-text {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.event-text.mt-40 {
+  margin-top: 40px;
+}
+
+.event-container .btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 992px) {
+  .event-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .event-text.mt-40 {
+    margin-top: 20px;
+  }
+}
+
+/** Footer */
+footer {
+  margin-top: 80px;
+  flex-direction: column;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  line-height: 23px;
+}
+
+.payment-methods img {
+  cursor: pointer;
+  max-width: 145px;
+}
+
+.payment-methods .lazy-img {
+  height: 73px;
+}
+
+.payment-methods > div {
+}
+
+footer .footer-solid {
+  width: 100%;
+  border-bottom: 2px dotted #d54539;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer .copyright-img {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .copyright {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer .mobile-app-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer .mobile-app-list img {
+  max-width: 220px;
+  filter: drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white)
+    drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white);
+  width: 100%;
+}
+
+/** Loader Animation */
+.loader {
+  width: 5vw;
+  height: 5vw;
+  border: 3px dotted #fff;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #ff5344;
+  border-style: solid solid dotted;
+  width: 1.667vw;
+  height: 1.667vw;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+
+@media (min-width: 1920px) {
+  .loader {
+    width: 6rem;
+    height: 6rem;
+  }
+  .loader::after {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
